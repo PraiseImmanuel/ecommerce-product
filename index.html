@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width, initial-scale= 1">
+        <meta name="description" content="Frontend Mentor - E-commerce product page">
+
+        <title>Frontend Mentor | E-commerce product page</title>
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <link rel="stylesheet" href="./css/web-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- nav -->
+        <nav>
+
+           <div class="logo-and-ul">
+                <div class="hamburger"><a href="javascript:menu();"><img src="./images/icon-menu.svg" alt=""></a></div>
+                
+                <div class="logo"><img src="./images/logo.svg" alt="logo"></div>
+
+                <div class="ul">
+                    <ul id="side-nav">
+                        <li><a href="javascript:closed();"><img src="./images/icon-close.svg" alt=""></a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+           </div>
+                    <!-- nav-cart and items -->
+            <div class="nav-cart">
+                <div class="cart-image">
+                    <span id="show-num-items" class="num">1</span>
+                    <a href="javascript:clickNavCartImg();"><img src="./images/icon-cart.svg" alt="cart" id="nav-cart-img"></a>
+                </div>
+                
+                    <div class="cart" id="cart">
+                        <div class="head-text">
+                                <p>Cart</p>
+                        </div>
+                        <div class="cart-info">
+                            <div class="product-info">
+                                <div class="prod-info-thumbnail"><img class="prod-pics" src="./images/image-product-1-thumbnail.jpg" alt=""></div>
+    
+                                <div class="info-text">
+                                    <p>Fall Limited Edition Snekears</p>
+                                    <p>$125.00 x <span class="num">1</span>  <span class="price-total">$125.00</span></p>
+                                </div>
+    
+                                <div class="delete-btn"><a href="javascript:delete_btn(1);"><img src="./images/icon-delete.svg" alt="delete"></a></div>
+                            </div>
+
+                            <div class="product-info">
+                                <div class="prod-info-thumbnail"><img class="prod-pics" src="./images/image-product-2-thumbnail.jpg" alt=""></div>
+    
+                                <div class="info-text">
+                                    <p>Fall Limited Edition Snekears</p>
+                                    <p>$125.00 x <span class="num">1</span>  <span class="price-total">$125.00</span></p>
+                                </div>
+    
+                                <div class="delete-btn"><a href="javascript:delete_btn(2);"><img src="./images/icon-delete.svg" alt="delete"></a></div>
+                            </div>
+
+                            <div class="product-info">
+                                <div class="prod-info-thumbnail"><img class="prod-pics" src="./images/image-product-3-thumbnail.jpg" alt=""></div>
+    
+                                <div class="info-text">
+                                    <p>Fall Limited Edition Snekears</p>
+                                    <p>$125.00 x <span class="num">1</span>  <span class="price-total">$125.00</span></p>
+                                </div>
+    
+                                <div class="delete-btn"><a href="javascript:delete_btn(3);"><img src="./images/icon-delete.svg" alt="delete"></a></div>
+                            </div>
+
+                            <div class="product-info">
+                                <div class="prod-info-thumbnail"><img class="prod-pics" src="./images/image-product-4-thumbnail.jpg" alt=""></div>
+    
+                                <div class="info-text">
+                                    <p>Fall Limited Edition Snekears</p>
+                                    <p>$125.00 x <span class="num">1</span>  <span class="price-total">$125.00</span></p>
+                                </div>
+    
+                                <div class="delete-btn"><a href="javascript:delete_btn(4);"><img src="./images/icon-delete.svg" alt="delete"></a></div>
+                            </div>
+    
+                            <div class="checkout"><a href="javascript:checkout();">Checkout</a></div>
+                            <div class="empty-cart"><p>Your cart is empty</p></div>
+                        </div>
+                        
+                    </div>
+                <img class="avatar" src="./images/image-avatar.png" alt="image avatar">
+            </div>
+        </nav>
+
+        <main>
+            <div class="full-container">
+
+                    <!-- product for sales -->
+                <article id="art-one">
+                    <div class="when-clicked">
+                        <div class="main-image">
+                            <a href="javascript:plusSlidesWhenClicked(-1)"><div class="prev-next prev"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke="currentColor" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div></a>
+                            <a href="javascript:plusSlidesWhenClicked(1)"><div class="prev-next next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke="currentColor" stroke-width="3" fill="none" fill-rule="evenodd"/></svg></div></a>
+                            <div class="close"><a href="javascript:closeIsolation();"><svg width="20" height="21" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="currentColor" fill-rule="evenodd"/></svg></a></div>
+                            <img src="./images/image-product-1.jpg" alt="product" class="w-product">
+                            <img src="./images/image-product-2.jpg" alt="product" class="w-product">
+                            <img src="./images/image-product-3.jpg" alt="product" class="w-product">
+                            <img src="./images/image-product-4.jpg" alt="product" class="w-product">
+                        </div>
+        
+                        <div class="thumbnail">
+                            <a href="javascript:click(1);" class="w-product-thumbnail"><img src="./images/image-product-1-thumbnail.jpg" alt="product thumbnail" class="w-img-prod-thumbnail"></a>
+                            <a href="javascript:click(2);" class="w-product-thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt="product thumbnail" class="w-img-prod-thumbnail"></a>
+                            <a href="javascript:click(3);" class="w-product-thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt="product thumbnail" class="w-img-prod-thumbnail"></a>
+                            <a href="javascript:click(4);" class="w-product-thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt="product thumbnail" class="w-img-prod-thumbnail"></a>
+                        </div>
+                    </div>
+
+                    <div class="main-image">
+                        <a href="javascript:plusSlides(-1)"><div class="prev-next prev"><img src="./images/icon-previous.svg" alt="previous"></div></a>
+                        <a href="javascript:plusSlides(1)"><div class="prev-next next"><img src="./images/icon-next.svg" alt="next"></div></a>
+                        <img src="./images/image-product-1.jpg" alt="product" class="product">
+                        <img src="./images/image-product-2.jpg" alt="product" class="product">
+                        <img src="./images/image-product-3.jpg" alt="product" class="product">
+                        <img src="./images/image-product-4.jpg" alt="product" class="product">
+                    </div>
+    
+                    <div class="thumbnail">
+                        <a href="javascript:click(1);" class="product-thumbnail"><img src="./images/image-product-1-thumbnail.jpg" alt="product thumbnail" class="img-prod-thumbnail"></a>
+                        <a href="javascript:click(2);" class="product-thumbnail"><img src="./images/image-product-2-thumbnail.jpg" alt="product thumbnail" class="img-prod-thumbnail"></a>
+                        <a href="javascript:click(3);" class="product-thumbnail"><img src="./images/image-product-3-thumbnail.jpg" alt="product thumbnail" class="img-prod-thumbnail"></a>
+                        <a href="javascript:click(4);" class="product-thumbnail"><img src="./images/image-product-4-thumbnail.jpg" alt="product thumbnail" class="img-prod-thumbnail"></a>
+                    </div>
+                </article>
+    
+                    <!-- product information -->
+                <article id="art-two">
+                    <p>Sneaker Company</p>
+    
+                    <h1>Fall Limited Edition Sneakers</h1>
+    
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                        durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+    
+                    <div class="price">
+                        <p>$125.00 <span>50%</span></p>
+                        <p> $250.00</p>
+                    </div>
+    
+                    <div class="cart-add-box">
+                        <div class="items-number">
+                            <div class="minus"><a href="javascript:minus();"><img src="./images/icon-minus.svg" alt="minus"></a></div>
+                            <div class="one">1</div>
+                            <div class="plus"><a href="javascript:plus();"><img src="./images/icon-plus.svg" alt="plus"></a></div>
+                        </div>
+                        <div id="add" class="add"><a href="javascript:addToCart();"><img src="./images/icon-cart -white.svg" alt="">Add to cart</a></div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer>
+            <div class="attribution-container">
+                <div><p>Challenge by: <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a></p></div>
+                <div><p>Developed by: <a href="https://github.com/PraiseImmanuel" target="_blank">PraiseImmanuel.</a></p></div>
+            </div>
+        </footer>
+
+
+        <script src="./index.js"></script>
+    </body>
+
+</html>
