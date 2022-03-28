@@ -29,9 +29,20 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/PraiseImmanuel/ecommerce-product)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://praiseimmanuel.github.io/ecommerce-product)
 
 ## Features
+- Pictures of products you can select from with next and previous buttons(4)
+- An add to cart button for chosing products you want to puchase.
+- A plus and minus button to chose the specific number of items(max-5) you are willing to purchase(as you do on Jumia and other ecommerce website)
+- A delete button to delete an item you are no longer interested in purchasing.
+- A checkout button to close the Cart-Box.
+- With a tracker(on the cart icon) to display to the number of items of the specific product displayed on screen.
+
+For Laptops
+-Hover Effects
+-An isolation mode to view just the products on a dark background.
+-Thumbnails to select each product.
 
 ### Built with
 
