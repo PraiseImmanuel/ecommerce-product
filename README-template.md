@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/PraiseImmanuel/ecommerce-product)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## Features
@@ -42,11 +42,8 @@ Users should be able to:
 
 
 ### Continued development
-Under taking this projet made me realised i had so much more to cover in Javascript. So i took up FreeCodeCamp tutorial for this purpose.
-
+Undertaking this projet made me realised I had so much more to cover in Javascript. So i took up FreeCodeCamp tutorial for this purpose.
 
 ## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/praiseimmanuel)
+- Twitter - [@yourusername](https://www.twitter.com/praiseimmanuel2)
